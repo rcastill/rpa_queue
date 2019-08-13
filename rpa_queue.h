@@ -17,6 +17,10 @@
 #ifndef RPA_QUEUE_H
 #define RPA_QUEUE_H
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 #include <stdbool.h>
 #include <stdint.h>
 #include <stddef.h>
@@ -153,4 +157,8 @@ bool rpa_queue_term(rpa_queue_t *queue);
  */
 void rpa_queue_destroy(rpa_queue_t * queue);
 
+#ifdef __cplusplus
+}
+#endif
+  
 #endif /* RPAQUEUE_H */
